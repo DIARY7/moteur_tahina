@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <name>apjconfig</name>
+    <servlet>
+        <servlet-name>Deroulante</servlet-name>
+        <servlet-class>web.servlet.Deroulante</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>AutoComplete</servlet-name>
+        <servlet-class>web.servlet.AutoComplete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletDownload</servlet-name>
+        <servlet-class>web.servlet.ServletDownload</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>ImportUtilServlet</servlet-name>
+        <servlet-class>web.importController.ImportUtilServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Deroulante</servlet-name>
+        <url-pattern>/deroulante</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ServletDownload</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+	
+	<servlet-mapping>
+        <servlet-name>ImportUtilServlet</servlet-name>
+        <url-pattern>/ImportUtilServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AutoComplete</servlet-name>
+        <url-pattern>/autocomplete</url-pattern>
+    </servlet-mapping>
+	
+
+    <!-- Add more servlet configurations as needed -->
+
+</web-app>
